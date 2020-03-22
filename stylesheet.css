@@ -1,0 +1,289 @@
+body {
+  font-family: "Avenir Next";
+}
+
+.header-list a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.kaimono{
+  float : right;
+  width:auto;
+  height:auto;
+  padding: 15px 20px 10px ;
+}
+.kaimono img {
+	display: block;
+	transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
+.kaimono img:hover {
+	transform: scale(1.1);	/*画像の拡大率*/
+	transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
+
+.header {
+  background-color:  #2f5167;
+  color: #fff;
+  height: 90px;
+}
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+}
+
+.header-list li {
+  float: left;
+  padding: 33px 20px;
+	/* display: inline-block; */
+	position: relative;
+	color:white;
+ 	text-decoration: none;
+}
+.header-list li:before{
+	content: "";
+	position: absolute;
+	 left: 0;
+	bottom: -1px;
+	width: 100%;
+	height: 10px;
+	background:white;
+	transform: scale(0, 1);
+	transform-origin: left;
+	transition: 0.4s;
+}
+.header-list li:hover:before {
+	transform: scale(1);
+}
+
+.main {
+  padding: 100px 80px;
+}
+
+.copy-container h1 {
+  font-size: 30px;
+}
+
+.copy-container h2 {
+  font-size: 30px;
+}
+
+.copy-container span {
+  color: #ff4a4a;
+}
+
+.maingazou{
+  text-align:center;
+  max-width : 100% ;
+  height : auto ;
+}
+
+.contents {
+  height: 500px;
+  margin-top: 100px;
+}
+
+
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.contents-item {
+  float: left;
+  margin-right: 20px;
+}
+
+.contents-item p {
+  /* font-size: 24px; */
+  margin-top: 30px;
+}
+
+/* 画像変化 */
+.contents-item img {
+	display: block;
+	transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
+.contents-item img:hover {
+	transform: scale(1.1);	/*画像の拡大率*/
+	transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
+
+.adress{
+  padding-top: 100px;
+}
+.adress-list {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.contact-form {
+  padding-top: 100px;
+}
+
+/* inputとtextareaのCSSを指定してください */
+input{
+  width:400px;
+  margin-top:10px;
+  margin-bottom:30px;
+  padding:20px;
+  font-size:18px;
+  border: 1px solid #dee7ec ;
+}
+
+textarea{
+  width:400px;
+  margin-top:10px;
+  margin-bottom:30px;
+  padding:20px;
+  font-size:18px;
+  border: 1px solid #dee7ec;
+}
+/* contact-submitのCSSを指定してください */
+.contact-submit{
+  background-color:#dee7ec;
+  color:#889eab;
+}
+
+.footer {
+  background-color: #2f5167;
+  color: #fff;
+  height: 120px;
+  padding: 40px;
+}
+
+.footer-logo {
+  float: left;
+  font-size: 32px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .contents-item {
+    float: none;
+    margin-right: 20px;
+  }
+}
+
+iframe { width : 100% ; }
+
+/* とっぷぼたん */
+/*パソコン・スマホ共通のCSS*/
+#PageTopBtn {
+	position: fixed; /*ボタンの配置場所を固定*/
+	transform: rotate( -45deg );
+}
+#PageTopBtn a {
+	display: block; /*配置の調整*/
+	text-decoration: none; /*文字の下線を消す*/
+	color: #fff; /*文字の色*/
+	background: #ff0000; /*ボタンの背景色*/
+	text-align: center; /*文字を中央に配置*/
+	border-radius: 5%; /*ボタンの角を少し丸くする*/
+	outline: none; /*クリックしたときの黒い枠を消す*/
+}
+#PageTopBtn a:hover {
+	text-decoration: none; 
+	background: #ff3d3d; /*マウスオーバー時の背景色*/
+}
+
+/*パソコンで表示する場合のCSS*/
+@media (min-width: 768px) {
+#PageTopBtn {
+	bottom: -10px; /*下からのボタンの配置場所を指定*/
+	right: -100px; /*右からのボタンの配置場所を指定*/
+	font-size: 15px; /*文字のサイズ*/
+}
+#PageTopBtn a {
+	width: 300px; /*ボタンの幅*/
+	height: 50px; /*ボタンの高さ*/
+	padding: 9px 0; /*文字の配置場所の調整*/
+}
+}
+
+/*スマホで表示する場合のCSS*/
+@media (max-width: 767px) {
+#PageTopBtn {
+	bottom: 0; /*下からのボタンの配置場所を指定*/
+	right: -40px; /*右からのボタンの配置場所を指定*/
+	font-size: 10px;
+}
+#PageTopBtn a {
+	width: 150px;
+	height: 30px;
+	padding: 6px 0;
+}
+}
+
+/* product.html */
+.productlist{
+  float: left;
+  margin-right: 20px;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table tr{
+  border-bottom: solid 1px #eee;
+  cursor: pointer;
+}
+
+ table tr:hover{
+  background-color: #d4f0fd;
+} 
+
+/* .black:hover {
+  background-color: #d4f0fd;
+} */
+
+table th,table td{
+  text-align: center;
+  width: 25%;
+  padding: 15px 0;
+}
+
+table td.icon{
+  background-size: 35px;
+  background-position: left 5px center;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+/* table td.icon.bird{
+  background-image: url(icon-bird.png)
+}
+
+table td.icon.whale{
+  background-image: url(icon-whale.png)
+}
+
+table td.icon.crab{
+  background-image: url(icon-crab.png)
+} */
+
+.tablecontent{
+  padding-top: 200px;
+}
+.tablecontent a{
+  color: red;
+}
+

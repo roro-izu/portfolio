@@ -1,12 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Example Portfolio</title>
-</head>
-<body>
-    <h1>Hello GitHub.io !</h1>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>OyasumiCoporation</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+
+      <p id="PageTopBtn"><a href="#wrap">▲Page Top</a></p>
+      <script>
+            $(function() {
+              var TopBtn = $('#PageTopBtn');    
+              TopBtn.hide();
+              // スクロール位置が100でボタンを表示
+              $(window).scroll(function() {
+                  if ($(this).scrollTop() > 100) {
+                      TopBtn.fadeIn();
+                  } 
+                  else {
+                      TopBtn.fadeOut();
+                  }
+              });
+              // ボタンを押下するとトップへ移動
+              TopBtn.click(function() {
+                  $('body,html').animate({
+                      scrollTop: 0
+                  }, 300);
+                  return false;
+              });
+            });
+      </script>
+
+    <div class="header">
+      <div class="header-logo">OyasumiCoporation</div>
+      <div class="header-list">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#product">PRODUCT</a></li>
+          <li><a href="#adress">ADRESS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <div class = "kaimono">
+            <img src="虫眼鏡.png" alt=""></div>
+            <div class = "kaimono">
+            <img src="カート.png" alt="kaimono"></div>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="copy-container">
+        <h1>快適な空間をあなたに<span>。</span></h1>
+        <div class = "maingazou"><img src="クッション材 v7.png" alt="製品"></div>
+      </div>
+      
+      <div class="contents" id ="product">
+        <h3 class="section-title">Product</h3>
+        <div class="contents-item">
+          <a href="product.html"><img src="クッション材kuro.png"></a>
+          <p>black</p>
+        </div>
+        <div class="contents-item">
+            <a href="product.html"><img src="クッション材monokuro.png"></a>
+          <p>monokuro</p>
+        </div>
+        <div class="contents-item">
+            <a href="product.html"><img src="クッション材white1.png"></a>
+          <p>white</p>
+        </div>
+        <!-- <div class="contents-item">
+          <p>Other coming soon...</p>
+        </div> -->
+      </div>
+
+      <div class = "adress" id="adress">
+          <h3 class="section-title">Adress</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.907091319589!2d135.14713671422246!3d34.27642131333243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000b1ffd8d1a3cf%3A0xfc3c45378502cea!2z44Kk44Kq44Oz44Oi44O844Or5ZKM5q2M5bGx!5e0!3m2!1sja!2sjp!4v1569319144114!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.907091319589!2d135.14713671422246!3d34.27642131333243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000b1ffd8d1a3cf%3A0xfc3c45378502cea!2z44Kk44Kq44Oz44Oi44O844Or5ZKM5q2M5bGx!5e0!3m2!1sja!2sjp!4v1569319144114!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+          <div class = "adress-list">
+            <li>〒640-8451 和歌山県和歌山市 中字楠谷 ５７３番地</li>
+            <li>TEL 01234-567-8901</li>
+            <li>e-Mail wakayama@oyasumi.com</li>
+            <li>営業時間 10:00〜20:00（水曜定休)</li>
+            <li>※都合により休業する場合がございます</li>
+          </div>
+      </div>
+      
+      <div class="contact-form" id ="contact">
+        <h3 class="section-title">Contact</h3>
+        
+        <p>メールアドレス（必須）</p>
+        <!-- <input>要素を追加してください -->
+        <input>
+        
+        <p>お問い合わせ内容（必須）</p>
+        <!-- <textarea>要素を追加してください -->
+        <textarea></textarea>
+        
+        <p>※必須項目は必ずご入力ください</p>
+        <!-- <input>要素を追加してください -->
+        <input class="contact-submit" type="submit" value="送信">
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-logo">OyasumiCoporation</div>
+      <div class="footer-list">
+        <ul>
+          <li>会社概要</li>
+          <li>採用</li>
+          <!-- <li>お問い合わせ</li> -->
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>
