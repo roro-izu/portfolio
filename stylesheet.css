@@ -2,33 +2,21 @@ body {
   font-family: "Avenir Next";
 }
 
+/*
 .header-list a {
   text-decoration: none;
-  color: white;
+  color: rgb(51, 51, 51);
 }
+*/
 
 li {
   list-style: none;
 }
 
-.kaimono{
-  float : right;
-  width:auto;
-  height:auto;
-  padding: 15px 20px 10px ;
-}
-.kaimono img {
-	display: block;
-	transition-duration: 0.3s;	/*変化に掛かる時間*/
-}
-.kaimono img:hover {
-	transform: scale(1.1);	/*画像の拡大率*/
-	transition-duration: 0.3s;	/*変化に掛かる時間*/
-}
 
 .header {
-  background-color:  #2f5167;
-  color: #fff;
+  /*background-color:  #2f5167;*/
+  color: rgb(51, 51, 51);
   height: 90px;
 }
 
@@ -43,7 +31,7 @@ li {
   padding: 33px 20px;
 	/* display: inline-block; */
 	position: relative;
-	color:white;
+	color: rgb(51, 51, 51);
  	text-decoration: none;
 }
 .header-list li:before{
@@ -63,7 +51,7 @@ li {
 }
 
 .main {
-  padding: 100px 80px;
+  padding: 0;
 }
 
 .copy-container h1 {
@@ -78,18 +66,6 @@ li {
   color: #ff4a4a;
 }
 
-.maingazou{
-  text-align:center;
-  max-width : 100% ;
-  height : auto ;
-}
-
-.contents {
-  height: 500px;
-  margin-top: 100px;
-}
-
-
 .section-title {
   border-bottom: 2px solid #dee7ec;
   font-size: 28px;
@@ -97,81 +73,25 @@ li {
   margin-bottom: 50px;
 }
 
-.contents-item {
-  float: left;
-  margin-right: 20px;
+#slider {
+  width: 100%;
+  margin: 0 auto;
 }
-
-.contents-item p {
-  /* font-size: 24px; */
-  margin-top: 30px;
+#slider img {
+  width: 100%;
 }
 
 /* 画像変化 */
-.contents-item img {
+.scale-img {
 	display: block;
 	transition-duration: 0.3s;	/*変化に掛かる時間*/
 }
-.contents-item img:hover {
+.scale-img:hover {
 	transform: scale(1.1);	/*画像の拡大率*/
-	transition-duration: 0.3s;	/*変化に掛かる時間*/
+  transition-duration: 0.3s;	/*変化に掛かる時間*/
+  cursor: pointer; /*カーソルをポインターにする*/
 }
 
-.adress{
-  padding-top: 100px;
-}
-.adress-list {
-  padding-top: 100px;
-  text-align: center;
-}
-
-.contact-form {
-  padding-top: 100px;
-}
-
-/* inputとtextareaのCSSを指定してください */
-input{
-  width:400px;
-  margin-top:10px;
-  margin-bottom:30px;
-  padding:20px;
-  font-size:18px;
-  border: 1px solid #dee7ec ;
-}
-
-textarea{
-  width:400px;
-  margin-top:10px;
-  margin-bottom:30px;
-  padding:20px;
-  font-size:18px;
-  border: 1px solid #dee7ec;
-}
-/* contact-submitのCSSを指定してください */
-.contact-submit{
-  background-color:#dee7ec;
-  color:#889eab;
-}
-
-.footer {
-  background-color: #2f5167;
-  color: #fff;
-  height: 120px;
-  padding: 40px;
-}
-
-.footer-logo {
-  float: left;
-  font-size: 32px;
-}
-
-.footer-list {
-  float: right;
-}
-
-.footer-list li {
-  padding-bottom: 20px;
-}
 
 @media screen and (max-width: 480px) {
   .contents-item {
@@ -247,43 +167,10 @@ table tr{
   cursor: pointer;
 }
 
- table tr:hover{
-  background-color: #d4f0fd;
-} 
-
-/* .black:hover {
-  background-color: #d4f0fd;
-} */
-
-table th,table td{
-  text-align: center;
-  width: 25%;
-  padding: 15px 0;
+h3{
+  padding: 20px 40px;
 }
 
-table td.icon{
-  background-size: 35px;
-  background-position: left 5px center;
-  background-repeat: no-repeat;
-  padding-left: 30px;
+.me{
+  padding: 20px 0px 20px 100px;
 }
-
-/* table td.icon.bird{
-  background-image: url(icon-bird.png)
-}
-
-table td.icon.whale{
-  background-image: url(icon-whale.png)
-}
-
-table td.icon.crab{
-  background-image: url(icon-crab.png)
-} */
-
-.tablecontent{
-  padding-top: 200px;
-}
-.tablecontent a{
-  color: red;
-}
-
